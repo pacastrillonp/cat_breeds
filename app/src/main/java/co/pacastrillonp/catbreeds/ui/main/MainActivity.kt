@@ -1,4 +1,4 @@
-package co.pacastrillonp.catbreeds
+package co.pacastrillonp.catbreeds.ui.main
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
