@@ -8,6 +8,9 @@ buildscript {
         koin_android_version= "3.3.2"
         retrofitVersion = '2.9.0'
         roomVersion = '2.5.1'
+        RxJavaVersion = '3.1.5'
+        RxKotlinVersion = '3.0.1'
+        RxAndroidVersion = '3.0.2'
     }
 }// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {

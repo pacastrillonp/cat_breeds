@@ -81,10 +81,9 @@ dependencies {
     testImplementation("androidx.room:room-testing:$roomVersion")
     implementation "androidx.room:room-rxjava3:$roomVersion"
 
-    // Coroutines
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$courutinesVersion"
-    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:$courutinesVersion") {
-        exclude group: "org.jetbrains.kotlinx", module: "kotlinx-coroutines-debug"
-    }
+    //RxJAva
+    implementation "io.reactivex.rxjava3:rxkotlin:$RxKotlinVersion"
+    implementation "io.reactivex.rxjava3:rxandroid:$RxAndroidVersion"
+    implementation "io.reactivex.rxjava3:rxjava:$RxJavaVersion"
 
 }
