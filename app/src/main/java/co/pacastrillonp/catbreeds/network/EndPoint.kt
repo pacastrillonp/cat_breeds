@@ -1,12 +1,15 @@
 package co.pacastrillonp.catbreeds.network
 
+enum class Authentication {
+    XApiKey, None
+}
 
 @Suppress("UNINITIALIZED_ENUM_COMPANION_WARNING")
 enum class Endpoint(
-    val path: String
+    val path: String,
+    val authentication: Authentication
 ) {
-    Users(Endpoint.BREEDS);
-
+    Cats(Endpoint.BREEDS, Authentication.XApiKey);
     companion object {
         const val BREEDS = "breeds"
 

@@ -11,7 +11,7 @@ import io.reactivex.rxjava3.core.Flowable
 interface CatDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insert(CatEntities: List<CatEntity>)
+    fun insert(catEntities: List<CatEntity>)
 
     @Query("SELECT * FROM ${CatEntity.TABLE_NAME} ORDER BY id DESC")
     fun getAllCats(): Flowable<List<CatEntity>>

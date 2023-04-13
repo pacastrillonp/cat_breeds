@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = CatEntity.TABLE_NAME)
 data class CatEntity(
-    @PrimaryKey val referenceImageId: String,
+    @PrimaryKey val id: String,
     val breadName: String,
     val origin: String,
     val affectionLevel: Int,

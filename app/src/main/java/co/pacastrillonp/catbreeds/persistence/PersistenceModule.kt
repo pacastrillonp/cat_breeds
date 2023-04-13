@@ -15,5 +15,5 @@ val persistenceModule = module {
             .build()
     }
 
-    single { get<CatBreedsDataBase>().CatDao() }
+    single { get<CatBreedsDataBase>().catDao() }
 }
