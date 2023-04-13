@@ -1,6 +1,10 @@
 package co.pacastrillonp.catbreeds.model.network
 
+import com.squareup.moshi.Json
+import com.squareup.moshi.JsonClass
+
+@JsonClass(generateAdapter = true)
 data class Weight(
-    val imperial: String,
-    val metric: String
+    @field:Json(name = "imperial") val imperial: String? = null,
+    @field:Json(name = "metric") val metric: String? = null
 )
