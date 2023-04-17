@@ -4,8 +4,8 @@ import co.pacastrillonp.catbreeds.enviroment.Constants
 import co.pacastrillonp.catbreeds.model.network.regenerate.ListCatsNetworkItem
 import co.pacastrillonp.catbreeds.model.persistence.CatEntity
 
-fun ListCatsNetworkItem.catNetworkToCatEntity(): CatEntity {
-    val referenceImageId = reference_image_id
+fun ListCatsNetworkItem.catNetworkToCatEntity(): CatEntity? {
+    val referenceImageId = reference_image_id ?: return null
     val breadName = name
     val origin = origin
     val affectionLevel = affection_level
